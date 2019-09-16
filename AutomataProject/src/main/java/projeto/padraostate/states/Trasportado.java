@@ -1,34 +1,27 @@
 package projeto.padraostate.states;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import projeto.padraostate.pedido.Pedido;
-import projeto.padraostate.state.States;
+import projeto.padraostate.state.State;
 
-public class Trasportado implements States {
-    public String onPedidoNovo(Pedido pedido) {
-        return null;
+@Data
+@EqualsAndHashCode
+@NoArgsConstructor
+@AllArgsConstructor
+public class Trasportado implements State {
+
+    public void next(Pedido pedido) {
+
     }
 
-    public String onPagamentoRealizado(Pedido pedido) {
-        return null;
+    public void previos(Pedido pedido) {
+
     }
 
-    public String onAprovado(Pedido pedido) {
-        return null;
-    }
+    public void printStatus() {
 
-    public String onTransportado(Pedido pedido) {
-        return null;
-    }
-
-    public String onEntregue(Pedido pedido) {
-        return null;
-    }
-
-    public String onCancelado(Pedido pedido) {
-        return null;
-    }
-
-    public String onFinalizado(Pedido pedido) {
-        return null;
     }
 }

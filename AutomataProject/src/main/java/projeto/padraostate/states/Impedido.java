@@ -11,19 +11,21 @@ import projeto.padraostate.state.State;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-public class PagamentoRealizado implements State {
+public class Impedido implements State {
 
     public void next(Pedido ped) {
-        ped.setState(new Aprovado());
+        if (ped.getStatusAnterior() == 1) {
+            ped.setState(new PedidoNovo());
+        } else if (ped.getStatusAnteriror() == 2) {
+            ped.setState(new PagamentoRealizado());
+        }
     }
 
-    public void previos(Pedido ped) {
-        System.out.println();
+    public void previos(Pedido pedido) {
 
     }
 
     public void printStatus() {
-        // TODO Auto-generated method stub
 
     }
 }
