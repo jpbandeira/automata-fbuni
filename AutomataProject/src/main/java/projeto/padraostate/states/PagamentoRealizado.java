@@ -1,29 +1,22 @@
 package projeto.padraostate.states;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import projeto.padraostate.pedido.Pedido;
 import projeto.padraostate.state.State;
+import projeto.padraostate.states.enuns.EstadoAnterior;
 
-@Data
-@EqualsAndHashCode
-@NoArgsConstructor
-@AllArgsConstructor
 public class PagamentoRealizado implements State {
 
     public void next(Pedido ped) {
         ped.setState(new Aprovado());
     }
-
-    public void previos(Pedido ped) {
-        System.out.println();
-
+    
+    public void impedir(Pedido ped) {
+    	ped.setState(new Impedido());
+    	ped.setEstadoAnterior(EstadoAnterior.PAGAMENTOREALIZADO);
     }
 
     public void printStatus() {
-        // TODO Auto-generated method stub
+        System.out.println("Seu pagagmento foi realizado com sucesso!!");
 
     }
 }

@@ -1,31 +1,29 @@
 package projeto.padraostate.states;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import projeto.padraostate.pedido.Pedido;
 import projeto.padraostate.state.State;
 
-@Data
-@EqualsAndHashCode
-@NoArgsConstructor
-@AllArgsConstructor
 public class Impedido implements State {
 
     public void next(Pedido ped) {
-        if (ped.getEstadoAnterior() == 1) {
+        ped.setState(new Cancelado());
+        ped.setEstadoFinal(true);
+    }
+
+    public void previous(Pedido ped) {
+    	if (ped.getEstadoAnterior().getCodigo() == 1) {
             ped.setState(new PedidoNovo());
-        } else if (ped.getEstadoAnterior() == 2) {
+            ped.setEstadoAnterior(null);
+        } else if (ped.getEstadoAnterior().getCodigo() == 2) {
             ped.setState(new PagamentoRealizado());
+            ped.setEstadoAnterior(null);
+        }else if(ped.getEstadoAnterior().getCodigo() == 3) {
+        	ped.setState(new Aprovado());
+        	ped.setEstadoAnterior(null);
         }
     }
 
-    public void previos(Pedido pedido) {
-
-    }
-
     public void printStatus() {
-
+    	System.out.println("Seu pedido esta em estado pendente!!");
     }
 }

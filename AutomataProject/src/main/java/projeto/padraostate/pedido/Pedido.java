@@ -1,21 +1,56 @@
 package projeto.padraostate.pedido;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import projeto.padraostate.state.State;
 import projeto.padraostate.states.PedidoNovo;
 import projeto.padraostate.states.enuns.EstadoAnterior;
 
-@Data
-@EqualsAndHashCode
-@NoArgsConstructor
-@AllArgsConstructor
 public class Pedido{
 
     private State state = new PedidoNovo();
     private Integer id;
-    private EstadoAnterior estadoAnterior;
+    private Integer estadoAnterior;
+    private boolean estadoFinal;
+	
+    public Pedido() {	
+    }    
+    
+    public Pedido(State state, Integer id, EstadoAnterior estadoAnterior) {
+		super();
+		this.state = state;
+		this.id = id;
+		this.estadoAnterior = estadoAnterior.getCodigo();
+	}
 
+	public State getState() {
+		return state;
+	}
+	
+	public void setState(State state) {
+		this.state = state;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+	public EstadoAnterior getEstadoAnterior() {
+		return EstadoAnterior.toEnum(estadoAnterior);
+	}
+	
+	public void setEstadoAnterior(EstadoAnterior estadoAnterior) {
+		this.estadoAnterior = estadoAnterior.getCodigo();
+	}
+
+	public boolean isEstadoFinal() {
+		return estadoFinal;
+	}
+
+	public void setEstadoFinal(boolean estadoFinal) {
+		this.estadoFinal = estadoFinal;
+	}
+    
 }

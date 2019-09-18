@@ -14,14 +14,10 @@ import projeto.padraostate.state.State;
 public class Finalizado implements State {
 
     public void next(Pedido pedido) {
-
-    }
-
-    public void previos(Pedido pedido) {
-
+    	System.out.println("ERR: Seu pedido já foi finalizado");
     }
 
     public void printStatus() {
-
+    	System.out.println("Pedido finalizado");
     }
 }

@@ -1,21 +1,21 @@
 package projeto.padraostate.states;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import projeto.padraostate.pedido.Pedido;
 import projeto.padraostate.state.State;
+import projeto.padraostate.states.enuns.EstadoAnterior;
 
-@Data @EqualsAndHashCode @NoArgsConstructor @AllArgsConstructor
 public class Aprovado implements State {
 
-    public void next(Pedido pedido) {
+    public void next(Pedido ped) {
+    	ped.setState(new Trasportado());
     }
-
-    public void previos(Pedido pedido) {
+    
+    public void impedir(Pedido ped) {
+    	ped.setState(new Impedido());
+    	ped.setEstadoAnterior(EstadoAnterior.APROVADO);
     }
 
     public void printStatus() {
+    	System.out.println("Seu pedido foi aprovado com sucesso");
     }
 }

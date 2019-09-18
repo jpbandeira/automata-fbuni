@@ -1,26 +1,15 @@
 package projeto.padraostate.states;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import projeto.padraostate.pedido.Pedido;
 import projeto.padraostate.state.State;
-@Data
-@EqualsAndHashCode
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class Entregue implements State {
 
-    public void next(Pedido pedido) {
-
-    }
-
-    public void previos(Pedido pedido) {
-
+    public void next(Pedido ped) {
+    	ped.setState(new Finalizado());
     }
 
     public void printStatus() {
-
+    	System.out.println("Seu pedido foi entregue com sucesso");
     }
 }

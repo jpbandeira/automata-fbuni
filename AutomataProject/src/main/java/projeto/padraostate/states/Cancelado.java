@@ -17,7 +17,7 @@ public class Cancelado implements State {
 
     }
 
-    public void previos(Pedido pedido) {
+    public void previous(Pedido pedido) {
 
     }
 
