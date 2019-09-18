@@ -9,8 +9,12 @@ public class PedidoNovo implements State {
     public void next (Pedido ped) {
         ped.setState(new PagamentoRealizado());
     }
-
-    public void impedir (Pedido ped) {
+    
+	public void previous(Pedido ped) {
+		System.out.println("Esse estado não possui estado anterior");
+	}
+	
+	public void impedir (Pedido ped) {
         ped.setState(new Impedido());
         ped.setEstadoAnterior(EstadoAnterior.PEDIDONOVO);
     }

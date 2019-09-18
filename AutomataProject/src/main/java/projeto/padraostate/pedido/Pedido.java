@@ -20,7 +20,19 @@ public class Pedido{
 		this.id = id;
 		this.estadoAnterior = estadoAnterior.getCodigo();
 	}
-
+    
+    public void previousState () {
+    	state.previous(this);
+    }
+    
+    public void nextState () {
+    	state.next(this);
+    }
+    
+    public void impedir () {
+    	state.impedir(this);
+    }
+    
 	public State getState() {
 		return state;
 	}

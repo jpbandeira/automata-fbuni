@@ -10,12 +10,17 @@ public class Aprovado implements State {
     	ped.setState(new Trasportado());
     }
     
+	public void previous(Pedido ped) {
+		System.out.println("Esse estado não possui estado anterior");
+	}
+	
     public void impedir(Pedido ped) {
     	ped.setState(new Impedido());
     	ped.setEstadoAnterior(EstadoAnterior.APROVADO);
     }
-
+	
     public void printStatus() {
     	System.out.println("Seu pedido foi aprovado com sucesso");
     }
+
 }

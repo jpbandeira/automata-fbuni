@@ -22,6 +22,10 @@ public class Impedido implements State {
         	ped.setEstadoAnterior(null);
         }
     }
+    
+	public void impedir(Pedido ped) {
+		System.out.println("Esse pedido já está em impedimento.");	
+	}
 
     public void printStatus() {
     	System.out.println("Seu pedido esta em estado pendente!!");

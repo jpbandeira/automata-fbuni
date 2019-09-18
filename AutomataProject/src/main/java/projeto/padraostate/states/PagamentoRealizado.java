@@ -10,6 +10,10 @@ public class PagamentoRealizado implements State {
         ped.setState(new Aprovado());
     }
     
+	public void previous(Pedido ped) {
+		System.out.println("Esse estado não possui estado anterior");
+	}
+	
     public void impedir(Pedido ped) {
     	ped.setState(new Impedido());
     	ped.setEstadoAnterior(EstadoAnterior.PAGAMENTOREALIZADO);
