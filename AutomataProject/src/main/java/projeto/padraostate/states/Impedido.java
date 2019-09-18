@@ -14,9 +14,9 @@ import projeto.padraostate.state.State;
 public class Impedido implements State {
 
     public void next(Pedido ped) {
-        if (ped.getStatusAnterior() == 1) {
+        if (ped.getEstadoAnterior() == 1) {
             ped.setState(new PedidoNovo());
-        } else if (ped.getStatusAnteriror() == 2) {
+        } else if (ped.getEstadoAnterior() == 2) {
             ped.setState(new PagamentoRealizado());
         }
     }

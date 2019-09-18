@@ -5,14 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/state/States.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/state/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Aprovado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Aprovado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Cancelado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Cancelado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Entregue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Entregue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Finalizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Finalizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PagamentoRealizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PagamentoRealizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Trasportado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Trasportado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,6 +54,23 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="StatesTests.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automataproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StatesTests" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StatesTests.teste" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -75,8 +86,25 @@
       <workItem from="1568566499620" duration="3870000" />
       <workItem from="1568586781481" duration="969000" />
       <workItem from="1568588898208" duration="391000" />
-      <workItem from="1568669537556" duration="789000" />
+      <workItem from="1568669537556" duration="1064000" />
+      <workItem from="1568839666571" duration="490000" />
+      <workItem from="1568840219710" duration="1732000" />
     </task>
+    <task id="LOCAL-00001" summary="Concluindo criação das classes e da estrutura de implementação do projeto.">
+      <created>1568670594606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568670594606</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Criando estrutura para iniciar implementação dos testes unitários.">
+      <created>1568841379414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568841379414</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +122,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Concluindo criação das classes e da estrutura de implementação do projeto." />
+    <MESSAGE value="Criando estrutura para iniciar implementação dos testes unitários." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando estrutura para iniciar implementação dos testes unitários." />
   </component>
 </project>
