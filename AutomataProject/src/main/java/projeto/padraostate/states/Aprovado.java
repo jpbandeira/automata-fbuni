@@ -6,21 +6,21 @@ import projeto.padraostate.states.enuns.EstadoAnterior;
 
 public class Aprovado implements State {
 
-    public void next(Pedido ped) {
+    public void seguirFluxo (Pedido ped) {
     	ped.setState(new Trasportado());
     }
     
-	public void previous(Pedido ped) {
-		System.out.println("Esse estado não possui estado anterior");
+	public void voltarFluxo (Pedido ped) {
+		System.out.println("Erro: Esse estado não possui estado anterior.");
 	}
 	
-    public void impedir(Pedido ped) {
+    public void impedir (Pedido ped) {
     	ped.setState(new Impedido());
     	ped.setEstadoAnterior(EstadoAnterior.APROVADO);
     }
 	
-    public void printStatus() {
-    	System.out.println("Seu pedido foi aprovado com sucesso");
+    public void printarStatus () {
+    	System.out.println("Sucesso: Seu pedido foi aprovado!");
     }
 
 }

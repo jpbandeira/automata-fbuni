@@ -4,8 +4,8 @@ import projeto.padraostate.pedido.Pedido;
 
 public interface State {
 
-    void next(Pedido ped);
-    void previous(Pedido ped);
-    void impedir(Pedido ped);
-    void printStatus();
+    void seguirFluxo (Pedido ped);
+    void voltarFluxo (Pedido ped);
+    void impedir (Pedido ped);
+    void printarStatus ();
 }

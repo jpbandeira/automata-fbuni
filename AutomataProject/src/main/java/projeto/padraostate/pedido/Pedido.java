@@ -11,10 +11,10 @@ public class Pedido{
     private Integer estadoAnterior;
     private boolean estadoFinal;
 	
-    public Pedido() {	
+    public Pedido () {	
     }    
     
-    public Pedido(State state, Integer id, EstadoAnterior estadoAnterior) {
+    public Pedido (State state, Integer id, EstadoAnterior estadoAnterior) {
 		super();
 		this.state = state;
 		this.id = id;
@@ -22,46 +22,46 @@ public class Pedido{
 	}
     
     public void previousState () {
-    	state.previous(this);
+    	state.voltarFluxo(this);
     }
     
     public void nextState () {
-    	state.next(this);
+    	state.seguirFluxo(this);
     }
     
     public void impedir () {
     	state.impedir(this);
     }
     
-	public State getState() {
+	public State getState () {
 		return state;
 	}
 	
-	public void setState(State state) {
+	public void setState (State state) {
 		this.state = state;
 	}
 	
-	public Integer getId() {
+	public Integer getId () {
 		return id;
 	}
 	
-	public void setId(Integer id) {
+	public void setId (Integer id) {
 		this.id = id;
 	}
 	
-	public EstadoAnterior getEstadoAnterior() {
+	public EstadoAnterior getEstadoAnterior () {
 		return EstadoAnterior.toEnum(estadoAnterior);
 	}
 	
-	public void setEstadoAnterior(EstadoAnterior estadoAnterior) {
+	public void setEstadoAnterior (EstadoAnterior estadoAnterior) {
 		this.estadoAnterior = estadoAnterior.getCodigo();
 	}
 
-	public boolean isEstadoFinal() {
+	public boolean isEstadoFinal () {
 		return estadoFinal;
 	}
 
-	public void setEstadoFinal(boolean estadoFinal) {
+	public void setEstadoFinal (boolean estadoFinal) {
 		this.estadoFinal = estadoFinal;
 	}
     

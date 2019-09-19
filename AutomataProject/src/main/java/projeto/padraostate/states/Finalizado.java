@@ -13,19 +13,19 @@ import projeto.padraostate.state.State;
 @AllArgsConstructor
 public class Finalizado implements State {
 
-    public void next(Pedido pedido) {
-    	System.out.println("ERR: Seu pedido já foi finalizado");
+    public void seguirFluxo (Pedido pedido) {
+    	System.out.println("Erro: Seu pedido já foi finalizado.");
     }
     
-	public void previous(Pedido ped) {
-		System.out.println("Esse estado não possui estado anterior");
+	public void voltarFluxo (Pedido ped) {
+		System.out.println("Erro: Esse estado não possui estado anterior.");
 	}
 	
-	public void impedir(Pedido ped) {
-		System.out.println("Não é possível impedir esse pedido.");	
+	public void impedir (Pedido ped) {
+		System.out.println("Erro: Não é possível impedir esse pedido.");	
 	}
 
-    public void printStatus() {
-    	System.out.println("Pedido finalizado");
+    public void printarStatus () {
+    	System.out.println("Sucesso: Pedido finalizado!");
     }
 }

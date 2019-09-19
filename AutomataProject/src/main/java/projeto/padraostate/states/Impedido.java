@@ -5,29 +5,27 @@ import projeto.padraostate.state.State;
 
 public class Impedido implements State {
 
-    public void next(Pedido ped) {
+    public void seguirFluxo (Pedido ped) {
         ped.setState(new Cancelado());
         ped.setEstadoFinal(true);
     }
 
-    public void previous(Pedido ped) {
+    public void voltarFluxo (Pedido ped) {
     	if (ped.getEstadoAnterior().getCodigo() == 1) {
             ped.setState(new PedidoNovo());
-            ped.setEstadoAnterior(null);
         } else if (ped.getEstadoAnterior().getCodigo() == 2) {
             ped.setState(new PagamentoRealizado());
-            ped.setEstadoAnterior(null);
-        }else if(ped.getEstadoAnterior().getCodigo() == 3) {
+        } else if (ped.getEstadoAnterior().getCodigo() == 3) {
         	ped.setState(new Aprovado());
-        	ped.setEstadoAnterior(null);
         }
+    	ped.setEstadoAnterior(null);
     }
     
-	public void impedir(Pedido ped) {
-		System.out.println("Esse pedido já está em impedimento.");	
+	public void impedir (Pedido ped) {
+		System.out.println("Erro: Esse pedido já está em impedimento.");	
 	}
 
-    public void printStatus() {
-    	System.out.println("Seu pedido esta em estado pendente!!");
+    public void printarStatus () {
+    	System.out.println("Sucesso: Seu pedido esta pendente.");
     }
 }

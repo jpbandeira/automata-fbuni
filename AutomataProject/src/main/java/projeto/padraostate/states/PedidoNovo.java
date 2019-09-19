@@ -6,12 +6,12 @@ import projeto.padraostate.states.enuns.EstadoAnterior;
 
 public class PedidoNovo implements State {
 
-    public void next (Pedido ped) {
+    public void seguirFluxo (Pedido ped) {
         ped.setState(new PagamentoRealizado());
     }
     
-	public void previous(Pedido ped) {
-		System.out.println("Esse estado não possui estado anterior");
+	public void voltarFluxo (Pedido ped) {
+		System.out.println("Erro: Esse estado não possui estado anterior.");
 	}
 	
 	public void impedir (Pedido ped) {
@@ -19,8 +19,8 @@ public class PedidoNovo implements State {
         ped.setEstadoAnterior(EstadoAnterior.PEDIDONOVO);
     }
 
-    public void printStatus () {
-        System.out.println("Sucesso: Seu pedido foi iniciado.");
+    public void printarStatus () {
+        System.out.println("Sucesso: Seu pedido foi iniciado!");
     }
     
 }
