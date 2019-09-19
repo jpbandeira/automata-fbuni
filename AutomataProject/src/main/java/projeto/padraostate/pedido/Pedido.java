@@ -64,5 +64,9 @@ public class Pedido{
 	public void setEstadoFinal (boolean estadoFinal) {
 		this.estadoFinal = estadoFinal;
 	}
-    
+
+	public boolean getEstadoFinal(){
+        return estadoFinal;
+    }
+
 }
