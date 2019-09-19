@@ -22,7 +22,7 @@ public class Impedido implements State {
     }
     
 	public void impedir (Pedido ped) {
-		System.out.println("Erro: Esse pedido j· est· em impedimento.");	
+		System.out.println("Erro: Esse pedido j√° esta em impedimento.");
 	}
 
     public void printarStatus () {

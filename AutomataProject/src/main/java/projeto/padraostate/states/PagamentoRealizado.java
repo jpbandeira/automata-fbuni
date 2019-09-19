@@ -11,7 +11,7 @@ public class PagamentoRealizado implements State {
     }
     
 	public void voltarFluxo (Pedido ped) {
-		System.out.println("Erro: Esse estado n„o possui estado anterior");
+		System.out.println("Erro: Esse estado n√£o possui estado anterior");
 	}
 	
     public void impedir (Pedido ped) {

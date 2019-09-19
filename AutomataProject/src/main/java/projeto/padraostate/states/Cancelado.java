@@ -6,15 +6,15 @@ import projeto.padraostate.state.State;
 public class Cancelado implements State {
 
     public void seguirFluxo (Pedido pedido) {
-    	System.out.println("Erro: Seu pedido j· foi finalizado.");
+    	System.out.println("Erro: Seu pedido j√° foi finalizado.");
     }
 
     public void voltarFluxo (Pedido pedido) {
-    	System.out.println("Erro: Esse estado n„o possui estado anterior.");
+    	System.out.println("Erro: Esse estado n√£o possui estado anterior.");
     }
 
 	public void impedir (Pedido ped) {
-		System.out.println("Erro: N„o È possÌvel impedir esse pedido.");	
+		System.out.println("Erro: N√£o √© poss√≠vel impedir esse pedido.");
 	}    
     
     public void printarStatus () {

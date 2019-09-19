@@ -6,20 +6,20 @@ public enum EstadoAnterior {
 	PAGAMENTOREALIZADO("Pagamento Realizado", 2),
 	APROVADO("Aprovado", 3);	
 	
-	private String descrição;
+	private String descricao;
 	private Integer codigo;
     
-    private EstadoAnterior(String descrição ,int codigo) {
+    private EstadoAnterior(String descricao ,int codigo) {
         this.codigo = codigo;
-        this.descrição = descrição;
+        this.descricao = descricao;
     }
 
     public int getCodigo() {
         return codigo;
     }
 
-    public String getDescrição() {
-        return descrição;
+    public String getDescricao() {
+        return descricao;
     }
 
     public static  EstadoAnterior toEnum(Integer codigo){

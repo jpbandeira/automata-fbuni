@@ -11,11 +11,11 @@ public class Entregue implements State {
     }
     
 	public void voltarFluxo (Pedido ped) {
-		System.out.println("Erro: Esse estado n„o possui estado anterior.");
+		System.out.println("Erro: Esse estado n√£o possui estado anterior.");
 	}
 	
 	public void impedir (Pedido ped) {
-		System.out.println("Erro: N„o È possÌvel impedir esse pedido.");	
+		System.out.println("Erro: N√£o √© poss√≠vel impedir esse pedido.");
 	}
 
     public void printarStatus () {

@@ -4,8 +4,13 @@
     <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Aprovado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Aprovado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Cancelado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Cancelado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Entregue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Entregue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Finalizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Finalizado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PagamentoRealizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PagamentoRealizado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Trasportado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Trasportado.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +93,7 @@
       <workItem from="1568588898208" duration="391000" />
       <workItem from="1568669537556" duration="1064000" />
       <workItem from="1568839666571" duration="490000" />
-      <workItem from="1568840219710" duration="1732000" />
+      <workItem from="1568840219710" duration="2741000" />
     </task>
     <task id="LOCAL-00001" summary="Concluindo criação das classes e da estrutura de implementação do projeto.">
       <created>1568670594606</created>
@@ -104,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568841379414</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refatorando codigo e adicioando dependencia do JUnit.">
+      <created>1568841975548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568841975548</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Concluindo criação das classes e da estrutura de implementação do projeto." />
     <MESSAGE value="Criando estrutura para iniciar implementação dos testes unitários." />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando estrutura para iniciar implementação dos testes unitários." />
+    <MESSAGE value="Refatorando codigo e adicioando dependencia do JUnit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatorando codigo e adicioando dependencia do JUnit." />
   </component>
 </project>
