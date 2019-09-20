@@ -11,7 +11,7 @@ public class PedidoNovo implements State {
     }
     
 	public void voltarFluxo (Pedido ped) {
-		System.out.println("Erro: Esse estado não possui estado anterior.");
+		System.out.println("Erro: O estado PEDIDO NOVO não possui estado anterior.");
 	}
 	
 	public void impedir (Pedido ped) {

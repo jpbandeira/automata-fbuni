@@ -10,7 +10,7 @@ public class Cancelado implements State {
     }
 
     public void voltarFluxo (Pedido pedido) {
-    	System.out.println("Erro: Esse estado não possui estado anterior.");
+    	System.out.println("Erro: O estado CANCELADO não possui estado anterior.");
     }
 
 	public void impedir (Pedido ped) {

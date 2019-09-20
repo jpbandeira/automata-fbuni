@@ -25,6 +25,6 @@ public class Impedido implements State {
 	}
 
     public void printarStatus () {
-    	System.out.println("Sucesso: Seu pedido esta pendente.");
+    	System.out.println("AVISO: Seu pedido esta pendente.");
     }
 }

@@ -10,7 +10,7 @@ public class Finalizado implements State {
     }
     
 	public void voltarFluxo (Pedido ped) {
-		System.out.println("Erro: Esse estado não possui estado anterior.");
+		System.out.println("Erro: O estado FINALIZADO não possui estado anterior.");
 	}
 	
 	public void impedir (Pedido ped) {
