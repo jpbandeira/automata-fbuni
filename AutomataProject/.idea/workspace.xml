@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StatesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StatesTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,7 @@
       <workItem from="1568588898208" duration="391000" />
       <workItem from="1568669537556" duration="1064000" />
       <workItem from="1568839666571" duration="490000" />
-      <workItem from="1568840219710" duration="6702000" />
+      <workItem from="1568840219710" duration="6793000" />
     </task>
     <task id="LOCAL-00001" summary="Concluindo criação das classes e da estrutura de implementação do projeto.">
       <created>1568670594606</created>
