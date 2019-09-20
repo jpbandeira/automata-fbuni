@@ -18,7 +18,6 @@ public class Impedido implements State {
         } else if (ped.getEstadoAnterior().getCodigo() == 3) {
         	ped.setState(new Aprovado());
         }
-    	ped.setEstadoAnterior(null);
     }
     
 	public void impedir (Pedido ped) {

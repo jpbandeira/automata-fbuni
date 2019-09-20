@@ -5,7 +5,6 @@ import projeto.padraostate.pedido.Pedido;
 import projeto.padraostate.states.*;
 import projeto.padraostate.states.enuns.EstadoAnterior;
 
-import javax.swing.text.DefaultStyledDocument;
 
 import static org.junit.Assert.*;
 
@@ -42,10 +41,19 @@ public class StatesTests {
     @Test
     public void testeDeCadeiaSemImpedimento(){
         pedidoNovo.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
+
         pagamentoRealizado.seguirFluxo(pedido);
+        pagamentoRealizado.printarStatus();
+
         aprovado.seguirFluxo(pedido);
+        aprovado.printarStatus();
+
         trasportado.seguirFluxo(pedido);
+        trasportado.printarStatus();
+
         entregue.seguirFluxo(pedido);
+        entregue.printarStatus();
 
         assertEquals( true, pedido.getEstadoFinal());
     }
@@ -53,6 +61,8 @@ public class StatesTests {
     @Test
     public void testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto(){
         pedidoNovo.impedir(pedido);
+        pedidoNovo.printarStatus();
+        impedido.printarStatus();
 
         assertEquals("Quando o estado pedido novo foi impedido, o mesmo deve ser setado como estado anterior"
                 ,EstadoAnterior.PEDIDONOVO, pedido.getEstadoAnterior());
@@ -63,14 +73,139 @@ public class StatesTests {
     @Test
     public void testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto(){
         pedidoNovo.impedir(pedido);
-        impedido.voltarFluxo(pedido);
-        pedidoNovo.seguirFluxo(pedido);
-        pagamentoRealizado.seguirFluxo(pedido);
-        aprovado.seguirFluxo(pedido);
-        trasportado.seguirFluxo(pedido);
-        entregue.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
 
-        assertEquals("Quando o estado pedido novo for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," +
+        impedido.voltarFluxo(pedido);
+        impedido.printarStatus();
+
+        pedidoNovo.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
+
+        pagamentoRealizado.seguirFluxo(pedido);
+        pagamentoRealizado.printarStatus();
+
+        aprovado.seguirFluxo(pedido);
+        aprovado.printarStatus();
+
+        trasportado.seguirFluxo(pedido);
+        trasportado.printarStatus();
+
+        entregue.seguirFluxo(pedido);
+        entregue.printarStatus();
+
+        finalizado.printarStatus();
+
+        assertEquals("Quando o estado pedido novo for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto(){
+        pedidoNovo.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
+
+        pagamentoRealizado.impedir(pedido);
+
+        impedido.voltarFluxo(pedido);
+        impedido.printarStatus();
+
+        pagamentoRealizado.seguirFluxo(pedido);
+        pagamentoRealizado.printarStatus();
+
+        aprovado.seguirFluxo(pedido);
+        aprovado.printarStatus();
+
+        trasportado.seguirFluxo(pedido);
+        trasportado.printarStatus();
+
+        entregue.seguirFluxo(pedido);
+        entregue.printarStatus();
+
+        finalizado.printarStatus();
+
+        assertEquals("Quando o estado pagamento realizado for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaImpedidaEmAprovadoSeguindoFluxoCompleto(){
+        pedidoNovo.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
+
+        pagamentoRealizado.seguirFluxo(pedido);
+        pagamentoRealizado.printarStatus();
+
+        aprovado.impedir(pedido);
+
+        impedido.voltarFluxo(pedido);
+        impedido.printarStatus();
+
+        aprovado.seguirFluxo(pedido);
+        aprovado.printarStatus();
+
+        trasportado.seguirFluxo(pedido);
+        trasportado.printarStatus();
+
+        entregue.seguirFluxo(pedido);
+        entregue.printarStatus();
+
+        finalizado.printarStatus();
+
+        assertEquals("Quando o estado aprovado for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaCanceladoEmPedidoNovoSeguindoFluxoCompleto(){
+
+        pedidoNovo.impedir(pedido);
+        pedidoNovo.printarStatus();
+
+        impedido.seguirFluxo(pedido);
+        impedido.printarStatus();
+
+        cancelado.printarStatus();
+
+        assertEquals("Quando o estado pedido novo for cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaCanceladoEmPagamentoRealizadoSeguindoFluxoCompleto(){
+
+        pedidoNovo.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
+
+        pagamentoRealizado.impedir(pedido);
+        pagamentoRealizado.printarStatus();
+
+        impedido.seguirFluxo(pedido);
+        impedido.printarStatus();
+
+        cancelado.printarStatus();
+
+        assertEquals("Quando o estado Pagamento Realizado for cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto(){
+
+        pedidoNovo.seguirFluxo(pedido);
+        pedidoNovo.printarStatus();
+
+        pagamentoRealizado.seguirFluxo(pedido);
+        pagamentoRealizado.printarStatus();
+
+        aprovado.impedir(pedido);
+        aprovado.printarStatus();
+
+        impedido.seguirFluxo(pedido);
+        impedido.printarStatus();
+
+        cancelado.printarStatus();
+
+        assertEquals("Quando o estado Aprovado for cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
                 true, pedido.getEstadoFinal());
     }
 }

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="" />
+    <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StatesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StatesTests.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,22 +54,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto">
-    <configuration name="StatesTests.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto">
+    <configuration name="StatesTests.testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="teste" />
+      <option name="METHOD_NAME" value="testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPedidoNovo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaCanceladoEmPagamentoRealizadoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPedidoNovo" />
+      <option name="METHOD_NAME" value="testeDeCadeiaCanceladoEmPagamentoRealizadoSeguindoFluxoCompleto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatesTests.testeDeCadeiaCanceladoEmPedidoNovoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automataproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StatesTests" />
+      <option name="METHOD_NAME" value="testeDeCadeiaCanceladoEmPedidoNovoSeguindoFluxoCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,10 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovo" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaCanceladoEmPagamentoRealizadoSeguindoFluxoCompleto" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaCanceladoEmPedidoNovoSeguindoFluxoCompleto" />
         <item itemvalue="JUnit.StatesTests.testeDeCadeiaSemImpedimento" />
-        <item itemvalue="JUnit.StatesTests.teste" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" />
       </list>
     </recent_temporary>
   </component>
@@ -167,11 +182,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StatesTests.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java</url>
           <line>10</line>
