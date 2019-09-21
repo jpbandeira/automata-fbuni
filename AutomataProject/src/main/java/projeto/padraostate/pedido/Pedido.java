@@ -13,20 +13,15 @@ public class Pedido{
 	
     public Pedido () {	
     }    
-    
-    public Pedido (State state, Integer id, EstadoAnterior estadoAnterior) {
-		super();
-		this.state = state;
-		this.id = id;
-		this.estadoAnterior = estadoAnterior.getCodigo();
-	}
-    
-    public void previousState () {
+
+    public void voltarFluxo() {
     	state.voltarFluxo(this);
+		toString();
     }
     
-    public void nextState () {
+    public void seguirFluxo() {
     	state.seguirFluxo(this);
+    	state.printarStatus();
     }
     
     public void impedir () {
@@ -41,24 +36,12 @@ public class Pedido{
 		this.state = state;
 	}
 	
-	public Integer getId () {
-		return id;
-	}
-	
-	public void setId (Integer id) {
-		this.id = id;
-	}
-	
 	public EstadoAnterior getEstadoAnterior () {
 		return EstadoAnterior.toEnum(estadoAnterior);
 	}
 	
 	public void setEstadoAnterior (EstadoAnterior estadoAnterior) {
 		this.estadoAnterior = estadoAnterior.getCodigo();
-	}
-
-	public boolean isEstadoFinal () {
-		return estadoFinal;
 	}
 
 	public void setEstadoFinal (boolean estadoFinal) {

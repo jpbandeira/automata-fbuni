@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StatesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StatesTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,21 +55,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmCancelado">
-    <configuration name="StatesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automataproject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto">
     <configuration name="StatesTests.testeDeCadeiaImpedidaEmAprovadoSemSeguirFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
       <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmAprovadoSemSeguirFluxoCompleto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automataproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StatesTests" />
+      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,21 +86,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmCancelado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmCancelado" />
+      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaSemImpedimento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaSemImpedimento" />
+      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmCancelado" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" />
         <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmAprovadoSemSeguirFluxoCompleto" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto" />
         <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSemSeguirFluxoCompleto" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaSemImpedimento" />
-        <item itemvalue="JUnit.StatesTests" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +134,8 @@
       <workItem from="1568839666571" duration="490000" />
       <workItem from="1568840219710" duration="6793000" />
       <workItem from="1568987303759" duration="3284000" />
+      <workItem from="1569026739387" duration="514000" />
+      <workItem from="1569034790357" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="Concluindo criação das classes e da estrutura de implementação do projeto.">
       <created>1568670594606</created>
@@ -176,23 +182,5 @@
     <MESSAGE value="Criando estrutura para iniciar implementação dos testes unitários." />
     <MESSAGE value="Refatorando codigo e adicioando dependencia do JUnit." />
     <option name="LAST_COMMIT_MESSAGE" value="Refatorando codigo e adicioando dependencia do JUnit." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java</url>
-          <line>10</line>
-          <properties field="estadoAnterior" class="projeto.padraostate.pedido.Pedido" />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java</url>
-          <line>11</line>
-          <properties field="estadoFinal" class="projeto.padraostate.pedido.Pedido" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

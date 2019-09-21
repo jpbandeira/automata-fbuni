@@ -8,6 +8,7 @@ public class PedidoNovo implements State {
 
     public void seguirFluxo (Pedido ped) {
         ped.setState(new PagamentoRealizado());
+        this.printarStatus();
     }
     
 	public void voltarFluxo (Pedido ped) {
@@ -16,6 +17,7 @@ public class PedidoNovo implements State {
 	
 	public void impedir (Pedido ped) {
         ped.setState(new Impedido());
+        this.printarStatus();
         ped.setEstadoAnterior(EstadoAnterior.PEDIDONOVO);
     }
 
