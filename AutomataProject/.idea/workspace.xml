@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/pedido/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/PedidoNovo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StatesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StatesTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,52 +53,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto">
-    <configuration name="StatesTests.testeDeCadeiaImpedidaEmAprovadoSemSeguirFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmCancelado">
+    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmAprovado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmAprovadoSemSeguirFluxoCompleto" />
+      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmAprovado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmCancelado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto" />
+      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmCancelado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSemSeguirFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmEntregue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPagamentoRealizadoSemSeguirFluxoCompleto" />
+      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmEntregue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmFinalizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" />
+      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmFinalizado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmTransportado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto" />
+      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmTransportado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSeguindoFluxoCompleto" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmAprovadoSemSeguirFluxoCompleto" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPedidoNovoSemSeguirFluxoCompleto" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmPagamentoRealizadoSemSeguirFluxoCompleto" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmCancelado" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmFinalizado" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmEntregue" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmTransportado" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmAprovado" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +134,8 @@
       <workItem from="1568987303759" duration="3284000" />
       <workItem from="1569026739387" duration="514000" />
       <workItem from="1569034790357" duration="1707000" />
+      <workItem from="1569093302736" duration="601000" />
+      <workItem from="1569201820106" duration="806000" />
     </task>
     <task id="LOCAL-00001" summary="Concluindo criação das classes e da estrutura de implementação do projeto.">
       <created>1568670594606</created>

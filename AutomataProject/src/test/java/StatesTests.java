@@ -99,206 +99,135 @@ public class StatesTests {
                 true, pedido.getEstadoFinal());
     }
 
-//    @Test
-//    public void testeDeCadeiaImpedidaEmAprovadoSeguindoFluxoCompleto(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.impedir(pedido);
-//
-//        impedido.voltarFluxo(pedido);
-//        impedido.printarStatus();
-//
-//        aprovado.seguirFluxo(pedido);
-//        aprovado.printarStatus();
-//
-//        trasportado.seguirFluxo(pedido);
-//        trasportado.printarStatus();
-//
-//        entregue.seguirFluxo(pedido);
-//        entregue.printarStatus();
-//
-//        finalizado.printarStatus();
-//
-//        assertEquals("Quando o estado Aprovado for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
-//                true, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaCanceladoEmPedidoNovoSeguindoFluxoCompleto(){
-//
-//        pedidoNovo.impedir(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        impedido.seguirFluxo(pedido);
-//        impedido.printarStatus();
-//
-//        cancelado.printarStatus();
-//
-//        assertEquals("Quando o estado Pedido Novo for Cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
-//                true, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaCanceladoEmPagamentoRealizadoSeguindoFluxoCompleto(){
-//
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.impedir(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        impedido.seguirFluxo(pedido);
-//        impedido.printarStatus();
-//
-//        cancelado.printarStatus();
-//
-//        assertEquals("Quando o estado Pagamento Realizado for Cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
-//                true, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto(){
-//
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.impedir(pedido);
-//        aprovado.printarStatus();
-//
-//        impedido.seguirFluxo(pedido);
-//        impedido.printarStatus();
-//
-//        cancelado.printarStatus();
-//
-//        assertEquals("Quando o estado Aprovado for Cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
-//                true, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmPedidoNovo(){
-//        pedidoNovo.voltarFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        assertEquals("Quando no estado Pedido Novo, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
-//                false, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmPagamentoRealizado(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.voltarFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        assertEquals("Quando no estado Pagamento Realizado, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
-//                false, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmAprovado(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.voltarFluxo(pedido);
-//        aprovado.printarStatus();
-//
-//        assertEquals("Quando no estado Aprovado, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
-//                false, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmTransportado(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.seguirFluxo(pedido);
-//        aprovado.printarStatus();
-//
-//        trasportado.voltarFluxo(pedido);
-//        trasportado.printarStatus();
-//
-//        assertEquals("Quando no estado Transportado, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
-//                false, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmEntregue(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.seguirFluxo(pedido);
-//        aprovado.printarStatus();
-//
-//        trasportado.seguirFluxo(pedido);
-//        trasportado.printarStatus();
-//
-//        entregue.voltarFluxo(pedido);
-//        entregue.printarStatus();
-//
-//        assertEquals("Quando no estado Entregue, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
-//                false, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmFinalizado(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.seguirFluxo(pedido);
-//        aprovado.printarStatus();
-//
-//        trasportado.seguirFluxo(pedido);
-//        trasportado.printarStatus();
-//
-//        entregue.seguirFluxo(pedido);
-//        entregue.printarStatus();
-//
-//        finalizado.voltarFluxo(pedido);
-//        finalizado.printarStatus();
-//
-//        assertEquals("Quando no estado Finalizado, tentar voltar para um estado anterior a ele, a cadeita foi aceita, deve retornar true, mas não pode voltar para outro estado.",
-//                true, pedido.getEstadoFinal());
-//    }
-//
-//    @Test
-//    public void testeDeCadeiaNaoAceitaEmCancelado(){
-//        pedidoNovo.seguirFluxo(pedido);
-//        pedidoNovo.printarStatus();
-//
-//        pagamentoRealizado.seguirFluxo(pedido);
-//        pagamentoRealizado.printarStatus();
-//
-//        aprovado.impedir(pedido);
-//        aprovado.printarStatus();
-//
-//        impedido.seguirFluxo(pedido);
-//        impedido.printarStatus();
-//
-//        cancelado.voltarFluxo(pedido);
-//        cancelado.printarStatus();
-//
-//
-//        assertEquals("Quando no estado Cancelado, tentar voltar para um estado anterior a ele, a cadeita foi aceita, deve retornar true, mas não pode voltar para outro estado.",
-//                true, pedido.getEstadoFinal());
-//    }
+    @Test
+    public void testeDeCadeiaImpedidaEmAprovadoSeguindoFluxoCompleto(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.impedir();
+        pedido.getState().printarStatus();
+        pedido.voltarFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+
+        assertEquals("Quando o estado Aprovado for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaCanceladoEmPedidoNovoSeguindoFluxoCompleto(){
+
+        pedido.impedir();
+        pedido.getState().printarStatus();
+        pedido.seguirFluxo();
+
+        assertEquals("Quando o estado Pedido Novo for Cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaCanceladoEmPagamentoRealizadoSeguindoFluxoCompleto(){
+
+        pedido.seguirFluxo();
+        pedido.impedir();
+        pedido.getState().printarStatus();
+        pedido.seguirFluxo();
+
+
+        assertEquals("Quando o estado Pagamento Realizado for Cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaCanceladoEmAprovadoSeguindoFluxoCompleto(){
+
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.impedir();
+        pedido.getState().printarStatus();
+        pedido.seguirFluxo();
+
+
+        assertEquals("Quando o estado Aprovado for Cancelado, ele deve ficar impedido anteriormente, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmPedidoNovo(){
+        pedido.getState().printarStatus();
+        pedido.voltarFluxo();
+
+        assertEquals("Quando no estado Pedido Novo, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
+                false, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmPagamentoRealizado(){
+        pedido.seguirFluxo();
+        pedido.voltarFluxo();
+
+        assertEquals("Quando no estado Pagamento Realizado, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
+                false, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmAprovado(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.voltarFluxo();
+
+        assertEquals("Quando no estado Aprovado, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
+                false, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmTransportado(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.voltarFluxo();
+
+
+        assertEquals("Quando no estado Transportado, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
+                false, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmEntregue(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.voltarFluxo();
+
+        assertEquals("Quando no estado Entregue, tentar voltar para um estado anterior a ele, a cadeita não deve ser aceita e retornar false, informando que o estado não é o final",
+                false, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmFinalizado(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.voltarFluxo();
+
+        assertEquals("Quando no estado Finalizado, tentar voltar para um estado anterior a ele, a cadeita foi aceita, deve retornar true, mas não pode voltar para outro estado.",
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaNaoAceitaEmCancelado(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.impedir();
+        pedido.getState().printarStatus();
+        pedido.seguirFluxo();
+        pedido.voltarFluxo();
+
+
+        assertEquals("Quando no estado Cancelado, tentar voltar para um estado anterior a ele, a cadeita foi aceita, deve retornar true, mas não pode voltar para outro estado.",
+                true, pedido.getEstadoFinal());
+    }
 }
