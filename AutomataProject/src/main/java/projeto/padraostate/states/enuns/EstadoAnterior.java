@@ -4,7 +4,8 @@ public enum EstadoAnterior {
 	
 	PEDIDONOVO("Pedido Novo", 1),
 	PAGAMENTOREALIZADO("Pagamento Realizado", 2),
-	APROVADO("Aprovado", 3);	
+	APROVADO("Aprovado", 3),
+    TRANSPORTADO("Transportado", 4);
 	
 	private String descricao;
 	private Integer codigo;
@@ -36,5 +37,4 @@ public enum EstadoAnterior {
         throw new IllegalArgumentException("Id invalido: " + codigo);
     }
 
-	
 }

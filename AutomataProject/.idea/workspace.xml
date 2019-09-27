@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f03124ef-286a-4afb-9b99-ec2e726dc660" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Aprovado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Aprovado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Impedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Trasportado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/Trasportado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/enuns/EstadoAnterior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projeto/padraostate/states/enuns/EstadoAnterior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StatesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StatesTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -38,8 +43,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,12 +58,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmCancelado">
-    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmAprovado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StatesTests.testeDeCadeiaSemImpedimento">
+    <configuration name="StatesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmAprovado" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatesTests.testeDeCadeiaImpedidaEmTransportadoSeguindoFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automataproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StatesTests" />
+      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmTransportadoSeguindoFluxoCompleto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatesTests.testeDeCadeiaImpedidaEmTransportadoSemSeguirFluxoCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automataproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StatesTests" />
+      <option name="METHOD_NAME" value="testeDeCadeiaImpedidaEmTransportadoSemSeguirFluxoCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,31 +98,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmEntregue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatesTests.testeDeCadeiaSemImpedimento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automataproject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmEntregue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmFinalizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automataproject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmFinalizado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StatesTests.testeDeCadeiaNaoAceitaEmTransportado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automataproject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StatesTests" />
-      <option name="METHOD_NAME" value="testeDeCadeiaNaoAceitaEmTransportado" />
+      <option name="METHOD_NAME" value="testeDeCadeiaSemImpedimento" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaSemImpedimento" />
+        <item itemvalue="JUnit.StatesTests" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmTransportadoSeguindoFluxoCompleto" />
+        <item itemvalue="JUnit.StatesTests.testeDeCadeiaImpedidaEmTransportadoSemSeguirFluxoCompleto" />
         <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmCancelado" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmFinalizado" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmEntregue" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmTransportado" />
-        <item itemvalue="JUnit.StatesTests.testeDeCadeiaNaoAceitaEmAprovado" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +140,7 @@
       <workItem from="1569034790357" duration="1707000" />
       <workItem from="1569093302736" duration="601000" />
       <workItem from="1569201820106" duration="806000" />
+      <workItem from="1569621723846" duration="2822000" />
     </task>
     <task id="LOCAL-00001" summary="Concluindo criação das classes e da estrutura de implementação do projeto.">
       <created>1568670594606</created>

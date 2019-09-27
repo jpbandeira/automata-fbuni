@@ -17,6 +17,8 @@ public class Impedido implements State {
             ped.setState(new PagamentoRealizado());
         } else if (ped.getEstadoAnterior().getCodigo() == 3) {
         	ped.setState(new Aprovado());
+        }else if(ped.getEstadoAnterior().getCodigo() == 4){
+    	    ped.setState(new Trasportado());
         }
     }
     

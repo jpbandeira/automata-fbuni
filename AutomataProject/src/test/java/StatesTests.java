@@ -68,6 +68,20 @@ public class StatesTests {
     }
 
     @Test
+    public void testeDeCadeiaImpedidaEmTransportadoSemSeguirFluxoCompleto(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.impedir();
+        pedido.getState().printarStatus();
+
+        assertEquals("Quando o estado Transportado foi impedido, o mesmo deve ser setado como estado anterior"
+                ,EstadoAnterior.TRANSPORTADO, pedido.getEstadoAnterior());
+        assertEquals( "Quando o estado Transportado foi impedido, o mesmo não deve ser estado final e a não sera aceita"
+                ,false, pedido.getEstadoFinal());
+    }
+
+    @Test
     public void testeDeCadeiaImpedidaEmPedidoNovoSeguindoFluxoCompleto(){
         pedido.impedir();
         pedido.getState().printarStatus();
@@ -111,6 +125,21 @@ public class StatesTests {
         pedido.seguirFluxo();
 
         assertEquals("Quando o estado Aprovado for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
+                true, pedido.getEstadoFinal());
+    }
+
+    @Test
+    public void testeDeCadeiaImpedidaEmTransportadoSeguindoFluxoCompleto(){
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+        pedido.impedir();
+        pedido.getState().printarStatus();
+        pedido.voltarFluxo();
+        pedido.seguirFluxo();
+        pedido.seguirFluxo();
+
+        assertEquals("Quando o estado Transportado for impedido e o seguir seu fluxo completo, o ultimo estado tem que ser o final e retornar true," ,
                 true, pedido.getEstadoFinal());
     }
 

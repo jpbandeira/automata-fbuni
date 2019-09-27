@@ -2,6 +2,7 @@ package projeto.padraostate.states;
 
 import projeto.padraostate.pedido.Pedido;
 import projeto.padraostate.state.State;
+import projeto.padraostate.states.enuns.EstadoAnterior;
 
 public class Trasportado implements State {
 
@@ -14,7 +15,9 @@ public class Trasportado implements State {
 	}
 	
 	public void impedir (Pedido ped) {
-		System.out.println("Erro: Não é possível impedir esse pedido.");
+		ped.setState(new Impedido());
+		ped.setEstadoAnterior(EstadoAnterior.TRANSPORTADO);
+    	//System.out.println("Erro: Não é possível impedir esse pedido.");
 	}
 
     public void printarStatus () {
